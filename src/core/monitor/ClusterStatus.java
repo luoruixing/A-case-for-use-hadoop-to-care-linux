@@ -35,11 +35,11 @@ public abstract class ClusterStatus {
 	protected static Rule alertRule=null;
 	protected long timestamp=System.currentTimeMillis();
 	
-	protected ErrorInfoType type =null;
+	protected String type =null;
 	protected float usePercent=0.0F;
-	protected float useResource=0.0F;
+	protected float userdResource=0.0F;
 	protected float totalResource=0.0F;
-	protected float availResource=0.0F;
+	protected float availableResouce=0.0F;
 	
 	public ClusterStatus(String hostname){
 		super();
@@ -200,12 +200,12 @@ public abstract class ClusterStatus {
 		this.usePercent = usePercent;
 	}
 
-	public float getUseResource() {
-		return useResource;
+	public float getUserdResource() {
+		return userdResource;
 	}
 
-	public void setUseResource(float useResource) {
-		this.useResource = useResource;
+	public void setUserdResource(float userdResource) {
+		this.userdResource = userdResource;
 	}
 
 	public float getTotalResource() {
@@ -216,12 +216,12 @@ public abstract class ClusterStatus {
 		this.totalResource = totalResource;
 	}
 
-	public float getAvailResource() {
-		return availResource;
+	public float getAvailableResouce() {
+		return availableResouce;
 	}
 
-	public void setAvailResource(float availResource) {
-		this.availResource = availResource;
+	public void setAvailableResouce(float availableResouce) {
+		this.availableResouce = availableResouce;
 	}
 
 	public static Rule getAlertRule() {
@@ -240,11 +240,11 @@ public abstract class ClusterStatus {
 		this.timestamp = timestamp;
 	}
 
-	public ErrorInfoType getType() {
+	public String getType() {
 		return type;
 	}
 
-	public void setType(ErrorInfoType type) {
+	public void setType(String type) {
 		this.type = type;
 	}
 
@@ -254,8 +254,8 @@ public abstract class ClusterStatus {
 				+ ", process=" + process + ", in=" + in + ", reader=" + reader
 				+ ", command=" + command + ", timestamp=" + timestamp
 				+ ", type=" + type + ", usePercent=" + usePercent
-				+ ", useResource=" + useResource + ", totalResource="
-				+ totalResource + ", availResource=" + availResource + "]";
+				+ ", useResource=" + userdResource + ", totalResource="
+				+ totalResource + ", availResource=" + availableResouce + "]";
 	}
 	
 	

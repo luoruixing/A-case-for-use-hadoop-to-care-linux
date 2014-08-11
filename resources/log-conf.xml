@@ -25,7 +25,7 @@
   		<value>0.9</value>
 	</property>
 	<property>                                    
-  		<name>monitor.mem.rule.lowpercents</name>                
+  		<name>monitor.cpu.rule.lowpercents</name>                
   		<value>0.9</value>
 	</property>
 	<property>                                    
