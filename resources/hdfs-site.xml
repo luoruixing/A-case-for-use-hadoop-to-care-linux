@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+<property>
+		<name>dfs.name.dir</name>
+		<value>/home/hadoop/data/namenode</value>
+		<description>NN metadata folder</description>
+	</property>
+	<property>
+		<name>dfs.data.dir</name>
+		<value>/home/hadoop/data/datanode</value>
+		<description>DN file data folder</description>
+	</property>
+	<property>
+		<name>dfs.replication</name>
+		<value>1</value>
+		<description>data replica copy number</description>
+	</property>
+</configuration>

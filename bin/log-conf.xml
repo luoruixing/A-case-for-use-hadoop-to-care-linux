@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>                                    
+  		<name>host.password</name>                
+  		<value>hadoop</value>
+	</property>
+	<property>                                    
+  		<name>host.user</name>                
+  		<value>Jack Chan</value>
+	</property> 
+	<property>                                    
+  		<name>monitor.check.interval </name>                
+  		<value>10000</value>
+	</property>
+	<property>                                    
+  		<name>monitor.hd.rule.lowpercents</name>                
+  		<value>0.8</value>
+	</property>
+	<property>                                    
+  		<name>monitor.mem.rule.lowpercents</name>                
+  		<value>0.9</value>
+	</property>
+	<property>                                    
+  		<name>monitor.mem.rule.lowpercents</name>                
+  		<value>0.9</value>
+	</property>
+	<property>                                    
+  		<name>hostnames</name>                
+  		<value>localhost</value>
+	</property>
+</configuration>
